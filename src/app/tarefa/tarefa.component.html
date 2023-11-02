@@ -1,0 +1,10 @@
+<div class="container">
+<div class="row">
+<h2>Tarefa 7</h2>
+</div>
+<div class="row">
+  <ul *ngFor="let item of tarefas" [ngStyle]="{'text-decoration': item.concluida ? 'line-through':'none' }">
+    <li > {{item.descricao}} <button class="btn btn-primary" (click)="concluir(item)">Concluir</button></li>
+  </ul>
+</div>
+</div>
